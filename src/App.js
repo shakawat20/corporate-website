@@ -10,6 +10,9 @@ import Careers from './components/careers/Careers';
 import JobDetails from './components/careers/JobDetails';
 import AboutUs from './components/aboutUs/AboutUs';
 import ProductService from './components/productService/ProductService';
+import PreviousWorks from './components/previousWorks/PreviousWorks';
+import Blog from './components/blog/Blog';
+import BlogDetails from './components/blog/BlogDetails';
 
 function App() {
   return (
@@ -22,6 +25,9 @@ function App() {
         <Route path='/about' element={<AboutUs></AboutUs>}/>
         <Route path='/jobDetails/:id' element={<JobDetails></JobDetails>}/>
         <Route path='/products' element={<ProductService></ProductService>}/>
+        <Route path='/previous' element={<PreviousWorks></PreviousWorks>}/>
+        <Route path='/blog' element={<Blog></Blog>}/>
+        <Route path="/blog/:id" element={<BlogDetails></BlogDetails>} />
 
       </Routes>
       <Footer></Footer>

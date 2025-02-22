@@ -10,8 +10,28 @@ import './Contact.css'
 const ContactPage = () => {
 
 
-    const { register, handleSubmit } = useForm()
-    const onSubmit = (data) => console.log(data)
+    const { register,handleSubmit,reset } = useForm()
+    const onSubmit = async (data) => {
+        console.log(data)
+        try {
+            const response = await fetch("http://localhost:5000/send-email", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(data),
+            });
+    
+            const result = await response.json();
+            if (result.success) {
+                alert("Message sent successfully!");
+                reset(); // Clear form after submission
+            } else {
+                alert("Failed to send message. Please try again.");
+            }
+        } catch (error) {
+            console.error("Error:", error);
+            alert("Error sending message.");
+        }
+    };
 
     useEffect(() => {
         window.scrollTo(0, 0);

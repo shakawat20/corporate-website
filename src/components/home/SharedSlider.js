@@ -47,7 +47,7 @@ const SharedSlider = () => {
                 {items.map((item, index) => (
                     <div
                         key={index}
-                        style={{border:'2px solid blue',display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center"}}
+                        style={{display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center"}}
 
                         className={`absolute inset-0 transition-opacity duration-1000 ${index === currentIndex ? 'opacity-100' : 'opacity-0'}`}
                     >
@@ -59,16 +59,16 @@ const SharedSlider = () => {
             </div>
          
             <div className=" inset-0 flex justify-between items-center">
-                <button
+                <button style={{border:"2px solid black",display:"none"}}
                     onClick={() => goToSlide((currentIndex - 1 + items.length) % items.length)}
-                    className="bg-black bg-opacity-50 text-white text-2xl p-2 cursor-pointer"
+                    className=" text-white text-2xl p-2 cursor-pointer"
                     aria-label="Previous Slide"
                 >
                     {/* &#10094; */}
                 </button>
                 <button
                     onClick={() => goToSlide((currentIndex + 1) % items.length)}
-                    className="bg-black bg-opacity-50 text-white text-2xl p-2 cursor-pointer"
+                    className=" bg-opacity-50 text-white text-2xl p-2 cursor-pointer"
                     aria-label="Next Slide"
                 >
                     {/* &#10095; */}
