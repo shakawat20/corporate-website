@@ -36,7 +36,7 @@ const Blog = () => {
     return (
         <div className="bg-gray-100 text-gray-900">
         {/* Hero Section */}
-        <section className="text-center py-16 bg-blue-600 text-white">
+        <section className="text-center py-16 bg-gray-900 text-white">
           <h1 className="text-4xl font-bold">Latest Insights & GIS Innovations</h1>
           <p className="mt-4 text-lg">Explore our latest blog posts on GIS, mapping, and geospatial technologies.</p>
         </section>
@@ -63,7 +63,7 @@ const Blog = () => {
         </section>
   
         {/* Call to Action */}
-        <section className="text-center py-16 bg-blue-600 text-white">
+        <section className="text-center py-16 bg-gray-900 text-white">
           <h2 className="text-3xl font-semibold">Stay Updated with the Latest GIS Trends</h2>
           <p className="mt-4 text-lg">Subscribe to our blog for regular insights and updates.</p>
           <button className="mt-6 bg-white text-blue-600 hover:bg-gray-200 px-4 py-2 rounded">Subscribe</button>

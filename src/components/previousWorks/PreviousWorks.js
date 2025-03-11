@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FaExternalLinkAlt, FaExternalLinkSquareAlt } from "react-icons/fa";
+import image1 from '../home/2.jpg'
 
 
 
@@ -41,7 +42,7 @@ const PreviousWorks=()=> {
   return (
     <div className="bg-gray-100 text-gray-900">
       {/* Hero Section */}
-      <section className="text-center py-16 bg-blue-600 text-white">
+      <section className="text-center py-16  text-white" style={{backgroundImage:`url(${image1})`,backgroundSize:"cover",backgroundPosition:"center"}}>
         <h1 className="text-4xl font-bold">Our Previous Works</h1>
         <p className="mt-4 text-lg">Explore some of the projects we've successfully completed.</p>
       </section>
@@ -66,7 +67,7 @@ const PreviousWorks=()=> {
       </section>
 
       {/* Call to Action */}
-      <section className="text-center py-16 bg-blue-600 text-white">
+      <section className="text-center py-16 bg-gray-900 text-white">
         <h2 className="text-3xl font-semibold">Want to Work with Us?</h2>
         <p className="mt-4 text-lg">Get in touch to discuss your project requirements.</p>
         <button className="mt-6 bg-white text-blue-600 hover:bg-gray-200 px-4 py-2 rounded">Contact Us</button>

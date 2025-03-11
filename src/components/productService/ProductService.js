@@ -65,7 +65,7 @@ const ProductService = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="text-center py-16 bg-blue-600 text-white">
+      <section className="text-center py-16 bg-gray-900 text-white">
         <h2 className="text-3xl font-semibold">Get Started with GIS Today!</h2>
         <p className="mt-4 text-lg">Contact us for a consultation or a demo of our GIS solutions.</p>
         <button className="mt-6 bg-white text-blue-600 hover:bg-gray-200 px-4 py-2 rounded">Contact Us</button>
